@@ -1,0 +1,202 @@
+@import "ui-variables";
+
+.sheet-toolbar {
+  border-bottom: 1px solid @border-color-divider;
+  box-shadow: none;
+}
+
+.thread-icon:not(.thread-icon-unread):not(.thread-icon-star) {
+  -webkit-filter: invert(100%);
+}
+img.content-dark {
+  -webkit-filter: invert(100%);
+}
+img.content-light {
+  -webkit-filter: invert(100%);
+}
+
+.thread-list .list-item:not(.unread):not(.selected):not(.focused) {
+  color: #3b3b3b;
+}
+
+.btn-toolbar {
+  background: #fff;
+  border: none;
+  padding: 0 13px;
+}
+
+.sheet-toolbar .btn-toolbar img.content-mask {
+  background-color: #171717;
+}
+
+.nylas-outline-view .item.selected {
+  background: none;
+  color: #8681ff;
+  font-weight: 400;
+}
+
+.thread-list .list-item .list-column-HoverActions .action.action-trash {
+  background-color: white;
+}
+.thread-list .list-item .list-column-HoverActions .action.action-archive {
+  background-color: white;
+}
+
+.btn:active {
+  cursor: default;
+  background: #f7f7f7;
+}
+
+body.is-blurred .sheet-toolbar-container .btn.btn-toolbar {
+  background: none;
+  box-shadow: none;
+}
+
+#message-list .footer-reply-area-wrap {
+  overflow: hidden;
+  max-width: 800px;
+  margin: -3px auto 10px auto;
+  position: relative;
+  z-index: 2;
+  border: 0;
+  border-top: 1px dashed #f7f7f7;
+  border-radius: 0 0 4px 4px;
+  background: #ffffff;
+  color: rgba(26, 26, 26, 0.6);
+}
+
+#message-list .message-item-wrap .message-item-white-wrap {
+  -webkit-box-shadow: 0px 0px 82px -10px rgba(0,0,0,0.09);
+  -moz-box-shadow: 0px 0px 82px -10px rgba(0,0,0,0.09);
+  box-shadow: 0px 0px 82px -10px rgba(0,0,0,0.09);
+}
+
+#message-list .messages-wrap.ready {
+  opacity: 1;
+  transition: opacity 0.1s linear;
+  background: #fdfdfd;
+}
+
+.mail-label{
+  color: rgb(130, 95, 43) !important;
+  background-color: rgb(242, 226, 201) !important;
+  box-shadow: none !important;
+  background-image: none !important;
+  font-size: 0.7em;
+  padding: 0px 7px;
+  margin-right: 6px;
+  flex-shrink: 0;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: default;
+  line-height: 22px;
+  -webkit-user-select: none;
+}
+
+.list-tabular .list-tabular-item.keyboard-cursor {
+  border-left: 2px solid #8681ff;
+}
+
+.nylas-outline-view .item {
+  color: rgba(82, 82, 82, 0.8);
+  flex: 1;
+  display: flex;
+  align-items: baseline;
+  font-size: 14px;
+  font-weight: 300;
+  padding-right: 14px;
+  line-height: 27.3px;
+  clear: both;
+  overflow: hidden;
+}
+
+.sheet-toolbar .btn-toolbar {
+  margin-top: 8px;
+  margin-left: 10.5px;
+  margin-right: 0;
+  flex-shrink: 0;
+  line-height: 1.75em;
+  height: 1.75em;
+  box-shadow: none;
+}
+
+.account-sidebar {
+  background-color: #f6f6f9;
+  -webkit-box-shadow: inset -6px 0px 14px -4px rgba(0,0,0,0.06);
+  -moz-box-shadow: inset -6px 0px 14px -4px rgba(0,0,0,0.06);
+  box-shadow: inset -6px 0px 14px -4px rgba(0,0,0,0.06);
+}
+
+.column-MessageListSidebar {
+  overflow: auto;
+  background-color: #ffffff;
+  color: rgba(26, 26, 26, 0.8);
+  background-color: white;
+  box-shadow: -6px 0px 29px 0px rgba(0,0,0,0.03);
+}
+
+.notifications{
+  -webkit-box-shadow: inset -6px 0px 14px -4px rgba(0,0,0,0.06);
+  -moz-box-shadow: inset -6px 0px 14px -4px rgba(0,0,0,0.06);
+  box-shadow: inset -6px 0px 14px -4px rgba(0,0,0,0.06);
+}
+
+#message-list .message-item-wrap .message-item-white-wrap {
+  box-shadow: 0 0 0.5px rgba(255, 255, 255, 0.28),
+  0 1px 1.5px rgba(255, 255, 255, 0.08);
+}
+
+.thread-list .list-item:not(.unread):not(.selected):not(.focused) {
+  color: #aaa;
+}
+
+.scrollbar-track {
+  position: relative;
+  opacity: 0;
+  transition: opacity 0.3s;
+  transition-delay: 0.5s;
+  padding: 3px;
+  width: 17px;
+  background: #f6f6f9;
+  border-left: 1px solid #f6f6f9;
+}
+
+.thread-search-bar {
+  position: relative;
+  order: -100;
+  overflow: visible;
+  z-index: 100;
+  width: 450px;
+  height: 23px;
+  font-weight: 400;
+  line-height: 23px;
+  background: #f6f6f9;
+  color: #212121;
+  margin-top: 7.5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 3px;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+}
+
+.thread-search-bar .search-accessory {
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  zoom: 1 !important;
+  opacity: 0.3;
+}
+
+.thread-search-bar.placeholder .tokenizing-contenteditable .layer-tokens {
+  color: rgba(183, 183, 183, 0.6);
+}
+
+.sheet-toolbar-container {
+  color: #1b1b1b;
+  background: white;
+  -webkit-box-shadow: 0px 9px 21px -8px rgba(0,0,0,0.09);
+  -moz-box-shadow: 0px 9px 21px -8px rgba(0,0,0,0.09);
+  box-shadow: 0px 9px 21px -8px rgba(0,0,0,0.09);
+}
